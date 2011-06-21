@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cd0ec823-2c1a-4a41-baf6-9fd1ddb82c91" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/lib/modernizr-rails/version.rb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/modernizr/rails.rb" afterPath="$PROJECT_DIR$/lib/modernizr/rails.rb" />
     </list>
     <ignored path="modernizr-rails.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -65,7 +64,7 @@
       <file leaf-file-name="rails.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/modernizr/rails.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="13" selection-start="72" selection-end="72" vertical-scroll-proportion="0.072115384">
+            <state line="5" column="27" selection-start="96" selection-end="96" vertical-scroll-proportion="0.120192304">
               <folding />
             </state>
           </provider>
@@ -312,13 +311,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Rakefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -347,9 +339,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Rakefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/modernizr/rails.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="13" selection-start="72" selection-end="72" vertical-scroll-proportion="0.072115384">
+        <state line="5" column="27" selection-start="96" selection-end="96" vertical-scroll-proportion="0.120192304">
           <folding />
         </state>
       </provider>
