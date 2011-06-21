@@ -1,6 +1,6 @@
 module Modernizr
   module Rails
-    require 'modernizr/rails/engine'
-    require 'modernizr/rails/version'
+    require 'rails/engine'
+    require 'rails/version'
   end
 end
