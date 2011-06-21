@@ -1,2 +1,7 @@
-require 'modernizr/rails/engine'
-require 'modernizr/rails/version'
+require "modernizr/rails/version"
+
+module Modernizr
+  module Rails
+    require 'modernizr/rails/engine'
+  end  
+end
