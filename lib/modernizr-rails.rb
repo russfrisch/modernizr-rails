@@ -1,1 +1,1 @@
-require 'jquery/rails'
+require 'modernizr/rails'
