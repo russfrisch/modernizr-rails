@@ -1,6 +1,6 @@
 module Modernizr
   module Rails
-    require 'jquery/rails/engine'
-    require 'jquery/rails/version'
+    require 'modernizr/rails/engine'
+    require 'modernizr/rails/version'
   end
 end
