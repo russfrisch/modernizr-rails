@@ -10,6 +10,10 @@ Add the following to your GemFile:<br>
 Then add the following to your application.js manifest:<br>
 `//= require modernizr`<br>
 
+HTML5 Boilerplate Rails Application Template
+=============================================
+If you're also a fan of the HTML5 Boilerplate project (http://h5bp.com), please check out a Rails 3.1 compatible application template I created that incorporates this Modernizr-Rails gem: https://github.com/russfrisch/h5bp-rails
+
 Push Requests
 ==============
 This is my first Ruby Gem so if there is anything that can be done better or you would like to see tweaked, please send me a push request.
