@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.version     = Modernizr::Rails::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Russ Frisch"]
-  s.email       = [""]
+  s.email       = ["russfrisch@shortmail.com"]
   s.homepage    = "http://rubygems.org/gems/modernizr-rails"
   s.summary     = %q{Gem wrapper to include the Modernizr.js library via the asset pipeline.}
   s.description = %q{This Modernizr.js was built using the at http://www.modernizr.com/download/ with all options enabled.}
