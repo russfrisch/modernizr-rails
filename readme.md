@@ -10,6 +10,10 @@ Add the following to your GemFile:<br>
 Then add the following to your application.js manifest:<br>
 `//= require modernizr`<br>
 
+Or to use the minified version:
+
+`//= require modernizr.min`<br>
+
 Don't forget to run `bundle update` after upgrading to the latest gem version to ensure it's used by your rails app.
 
 HTML5 Boilerplate Rails Application Template
