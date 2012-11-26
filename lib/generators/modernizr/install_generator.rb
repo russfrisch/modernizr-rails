@@ -1,4 +1,4 @@
-moddule Modernizr
+module Modernizr
   class InstallGenerator < Rails::Generators::Base
 
     def noify_about_javascripts
