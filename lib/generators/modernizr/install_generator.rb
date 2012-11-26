@@ -1,5 +1,5 @@
 module Modernizr
-  class InstallGenerator < Rails::Generators::Base
+  class InstallGenerator < ::Rails::Generators::Base
 
     def noify_about_javascripts
       insert_into_file File.join('app', 'assets', 'javascripts', 'application.js'),
@@ -12,6 +12,7 @@ module Modernizr
       puts " "
       puts "  //= require modernizr"
       puts " "
+      puts "*" * 75
     end
 
   end
