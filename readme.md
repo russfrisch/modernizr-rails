@@ -1,9 +1,8 @@
-About
-======
-The modernizr-rails gem will include the Modernizr.js library (https://github.com/Modernizr/Modernizr) into your Rails 3.1 or higher app via the asset pipeline. This modernizr.js file was built using the builder located at http://www.modernizr.com/download/ with all options checked.
+# modernizr-rails
 
-How to Use
-===========
+The modernizr-rails gem will include the [Modernizr.js](https://github.com/Modernizr/Modernizr) library into your Rails 3.1 or higher app via the asset pipeline. This modernizr.js file was built using the builder located at http://www.modernizr.com/download/ with all options checked.
+
+## How to Use
 Add the following to your GemFile:<br> 
 `gem 'modernizr-rails'`<br>
 
@@ -16,10 +15,15 @@ Or to use the minified version:
 
 Don't forget to run `bundle update` after upgrading to the latest gem version to ensure it's used by your rails app.
 
-HTML5 Boilerplate Rails Application Template
-=============================================
+## HTML5 Boilerplate Rails Application Template
 If you're also a fan of the HTML5 Boilerplate project (http://h5bp.com), please check out a Rails 3.1 compatible application template I created that incorporates this Modernizr-Rails gem: https://github.com/russfrisch/h5bp-rails
 
-Push Requests
-==============
+## Push Requests
 This is my first Ruby Gem so if there is anything that can be done better or you would like to see tweaked, please send me a push request.
+
+## Copyright
+(The MIT license)
+
+Copyright (C) 2011-2013 Russell Frisch (russfrisch)
+
+See [LICENSE.md](LICENSE.md).
