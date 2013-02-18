@@ -7,11 +7,14 @@ Add the following to your GemFile:<br>
 `gem 'modernizr-rails'`<br>
 
 Modernizr should be added to the `<head>` of your HTML so that feature detection happens before anything else.
-You can use the rails helper `=javascript_include_tag 'modernizr'` or `=javascript_include_tag 'modernizr.min'`
+You can use the rails helper `= javascript_include_tag 'modernizr'` or `= javascript_include_tag 'modernizr.min'`
 for the minified version.
 
 Note: The rails 3+ asset pipeline should minify the javascript in production automatically so it should
-not be completely necessary to use the `modernizr.min` version.
+not be completely necessary to use the `modernizr.min` version. But be sure to add the following code into `config/application.rb` to make sure it is precompiled.
+```
+config.assets.precompile += ['modernizr.js']
+```
 
 Don't forget to run `bundle update` after upgrading to the latest gem version to ensure it's used by your rails app.
 
