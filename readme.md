@@ -14,7 +14,7 @@ Modernizr should be added to the `<head>` of your HTML so that feature detection
 You can use the rails helper `<%= javascript_include_tag 'modernizr' %>` (or `<%= javascript_include_tag 'modernizr.min'%>`
 for the minified version) to include it.
 
-Example of your `app/views/laxouts/application.html.erb`:
+Example of your `app/views/layouts/application.html.erb`:
 
 ```erb
 <head>
