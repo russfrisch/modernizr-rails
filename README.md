@@ -11,7 +11,7 @@ gem 'modernizr-rails'
 
 ## Usage
 Modernizr should be added to the `<head>` of your HTML. Be sure to check out the [offical docs](http://modernizr.com/docs/#installing) about **Installing Modernizr** for more info.
-You can use the rails helper `<%= javascript_include_tag 'modernizr' %>` (or `<%= javascript_include_tag 'modernizr.min'%>`
+You can use the rails helper `<%= javascript_include_tag :modernizr %>` (or `<%= javascript_include_tag 'modernizr.min' %>`
 for the minified version) to include it.
 
 Example of your `app/views/layouts/application.html.erb`:
@@ -19,8 +19,8 @@ Example of your `app/views/layouts/application.html.erb`:
 ```erb
 <head>
   <title>Your App</title>
-  <%= stylesheet_link_tag    'application', media: 'all' %>
-  <%= javascript_include_tag 'modernizr' %>
+  <%= stylesheet_link_tag    :application, media: :all %>
+  <%= javascript_include_tag :modernizr %>
   <%= csrf_meta_tags %>
 </head>
 ```
