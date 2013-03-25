@@ -15,14 +15,15 @@ end
 Modernizr should be added to the `<head>` of your HTML. Be sure to check out the [offical docs](http://modernizr.com/docs/#installing) about **Installing Modernizr** for more info.
 Include it using the helper like so `<%= javascript_include_tag :modernizr %>`, Rails will take care of the compilation and minification automatically for you.
 
+
 Example of your `app/views/layouts/application.html.erb`:
 
 ```erb
 <html>
 <head>
   <title>Your App</title>
-  <%= stylesheet_link_tag    'application', media: 'all' %>
-  <%= javascript_include_tag 'modernizr' %>
+  <%= stylesheet_link_tag    :application, media: :all %>
+  <%= javascript_include_tag :modernizr %>
   <%= csrf_meta_tags %>
 </head>
 <body>
