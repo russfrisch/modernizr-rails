@@ -1,7 +1,9 @@
 module Modernizr
   module Rails
     class Engine < ::Rails::Engine
-      # auto wire
+      initializer 'Modernizr precompile hook', :group => :all do |app|
+        app.config.assets.precompile += ['modernizr.js']
+      end
     end
   end
 end

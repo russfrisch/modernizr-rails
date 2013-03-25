@@ -1,35 +1,36 @@
 # modernizr-rails
 
-The modernizr-rails gem will include the [Modernizr.js](https://github.com/Modernizr/Modernizr) library into your Rails 3.1 or higher app via the asset pipeline. This modernizr.js file was built using the builder located at http://www.modernizr.com/download/ with all options checked.
+The modernizr-rails gem will include the [Modernizr.js](https://github.com/Modernizr/Modernizr) library into your `Rails 3.1+` app via the asset pipeline. This modernizr.js file was built using the builder located at http://www.modernizr.com/download/ with all options checked.
 
 ## Installation
-Add the following to your Gemfile:
+Add the following to your `assets` group in your Gemfile:
 
 ```ruby
-gem 'modernizr-rails'
+group :assets do
+  gem 'modernizr-rails'
+end
 ```
 
 ## Usage
 Modernizr should be added to the `<head>` of your HTML. Be sure to check out the [offical docs](http://modernizr.com/docs/#installing) about **Installing Modernizr** for more info.
-You can use the rails helper `<%= javascript_include_tag 'modernizr' %>` (or `<%= javascript_include_tag 'modernizr.min'%>`
-for the minified version) to include it.
+Include it using the helper like so `<%= javascript_include_tag :modernizr %>`, Rails will take care of the compilation and minification automatically for you.
+
 
 Example of your `app/views/layouts/application.html.erb`:
 
 ```erb
+<html>
 <head>
   <title>Your App</title>
-  <%= stylesheet_link_tag    'application', media: 'all' %>
-  <%= javascript_include_tag 'modernizr' %>
+  <%= stylesheet_link_tag    :application, media: :all %>
+  <%= javascript_include_tag :modernizr %>
   <%= csrf_meta_tags %>
 </head>
-```
-
-Note: The Rails 3+ asset pipeline should minify the javascript in production automatically so it should
-not be completely necessary to use the `modernizr.min` version. But be sure to add the following code into `config/application.rb` to make sure it is precompiled.
-
-```ruby
-config.assets.precompile += ['modernizr.js']
+<body>
+  ...
+  <%= javascript_include_tag :application %>
+</body>
+</html>
 ```
 
 ## Contributing
