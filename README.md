@@ -1,6 +1,6 @@
 # modernizr-rails
 
-The modernizr-rails gem will include the [Modernizr.js](https://github.com/Modernizr/Modernizr) library into your `Rails 3.1+` app via the asset pipeline. This modernizr.js file was built using the builder located at http://www.modernizr.com/download/ with all options checked.
+The modernizr-rails gem will include the [Modernizr.js](https://github.com/Modernizr/Modernizr) library into your `Rails 3.1+` app via the asset pipeline. This gem is bundled with the development version from the [Modernizr site](http://modernizr.com), which is minified by the Rails Assets Pipeline for you automatically. If you need custom feature detection tests, consider the [Custom feature detection tests](#custom-feature-detection-tests) section in this README.
 
 ## Installation
 Add the following to your `assets` group in your Gemfile:
@@ -21,7 +21,7 @@ Example of your `app/views/layouts/application.html.erb`:
 ```erb
 <html>
 <head>
-  <title>Your App</title>
+  <title>Your Awesome App</title>
   <%= stylesheet_link_tag    :application, media: :all %>
   <%= javascript_include_tag :modernizr %>
   <%= csrf_meta_tags %>
@@ -32,6 +32,15 @@ Example of your `app/views/layouts/application.html.erb`:
 </body>
 </html>
 ```
+
+## Custom feature detection tests
+I you need a custom feature detection test not included in the Modernizr build shipped with this gem, please consider using your own version instead of sending a pull request to include your test. You can easily do this by moving your Modernizr build in to one of the assets folder. Rails will automagically use your build instead of the shipped one. However you can still continue to use this gem and its features (like the precompile hook, and so on).
+
+1. Configure your build on [modernizr.com/download](http://modernizr.com/download/).
+2. Download it.
+3. Rename it from `modernizr.custom.12345.js` to just `modernizr.js`.
+4. Move it to your asset pipeline folder, ideally `vendor/assets/javascripts`.
+5. Enjoy your custom build! :)
 
 ## Contributing
 
