@@ -49,6 +49,12 @@ If you already know which feature you need to test and don't want to load all th
 
 This will also load the conditional script loader.
 
+If you need to use the standalone `modernizr.js` file, add this line to your `config.application.rb`
+
+	config.assets.precompile += %W(
+		modernizr.js
+	)
+
 ## Custom feature detection tests
 I you need a custom feature detection test not included in the Modernizr build shipped with this gem, please consider using your own version instead of sending a pull request to include your test. You can easily do this by moving your Modernizr build in to one of the assets folder. Rails will automagically use your build instead of the shipped one. However you can still continue to use this gem and its features (like the precompile hook, and so on).
 
