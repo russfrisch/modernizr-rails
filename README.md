@@ -13,7 +13,13 @@ end
 
 ## Usage
 Modernizr should be added to the `<head>` of your HTML. Be sure to check out the [offical docs](http://modernizr.com/docs/#installing) about **Installing Modernizr** for more info.
-Include it using the helper like so `<%= javascript_include_tag :modernizr %>`, Rails will take care of the compilation and minification automatically for you.
+
+There is two ways to use this gem. If you don't know which feature you'll need to test, add this line to your `app/assets/javascripts/application.js` to compile as a part of application.js
+
+	// Load all Modernizr javascripts
+	//= require modernizr
+
+Or include it using the helper like so `<%= javascript_include_tag :modernizr %>`, Rails will take care of the compilation and minification automatically for you.
 
 
 Example of your `app/views/layouts/application.html.erb`:
@@ -32,6 +38,16 @@ Example of your `app/views/layouts/application.html.erb`:
 </body>
 </html>
 ```
+This will load all test scripts, including the `Modernizr.load` conditional script loader, based on [yepnope.js](https://github.com/SlexAxton/yepnope.js).
+
+If you already know which feature you need to test and don't want to load all these javascript files, you can load individual Modernizr javascript :
+
+	// Custom loading example
+	//= require modernizr-canvas
+	//= require modernizr-fontface
+	//= require modernizr-geolocation
+
+This will also load the conditional script loader.
 
 ## Custom feature detection tests
 I you need a custom feature detection test not included in the Modernizr build shipped with this gem, please consider using your own version instead of sending a pull request to include your test. You can easily do this by moving your Modernizr build in to one of the assets folder. Rails will automagically use your build instead of the shipped one. However you can still continue to use this gem and its features (like the precompile hook, and so on).
@@ -41,6 +57,12 @@ I you need a custom feature detection test not included in the Modernizr build s
 3. Rename it from `modernizr.custom.12345.js` to just `modernizr.js`.
 4. Move it to your asset pipeline folder, ideally `vendor/assets/javascripts`.
 5. Enjoy your custom build! :)
+
+## Update
+
+To update the Modernizr scripts, just use this `Rake` command
+
+	rake update-modernizr
 
 ## Contributing
 
