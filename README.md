@@ -1,6 +1,6 @@
 # modernizr-rails
 
-The modernizr-rails gem will include the [Modernizr.js](https://github.com/Modernizr/Modernizr) library into your `Rails 3.1+` app via the asset pipeline. This gem is bundled with the development version from the [Modernizr site](http://modernizr.com), which is minified by the Rails Assets Pipeline for you automatically. If you need custom feature detection tests, consider the [Custom feature detection tests](#custom-feature-detection-tests) section in this README.
+The modernizr-rails gem will include the [Modernizr.js](https://github.com/Modernizr/Modernizr) library into your `Rails 3.1+` app via the asset pipeline. This gem is bundled with the last tagged release version from the [Modernizr GitHub repo](https://github.com/Modernizr/Modernizr), which is minified by the Rails Assets Pipeline for you automatically. If you need custom feature detection tests, consider the [Custom feature detection tests](#custom-feature-detection-tests) section in this README.
 
 ## Installation
 Add the following to your `assets` group in your Gemfile:
