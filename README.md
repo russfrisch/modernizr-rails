@@ -34,7 +34,7 @@ Example of your `app/views/layouts/application.html.erb`:
 ```
 
 ## Custom feature detection tests
-I you need a custom feature detection test not included in the Modernizr build shipped with this gem, please consider using your own version instead of sending a pull request to include your test. You can easily do this by moving your Modernizr build in to one of the assets folder. Rails will automagically use your build instead of the shipped one. However you can still continue to use this gem and its features (like the precompile hook, and so on).
+If you need a custom feature detection test not included in the Modernizr build shipped with this gem, please consider using your own version instead of sending a pull request to include your test. You can easily do this by moving your Modernizr build in to one of the assets folder. Rails will automagically use your build instead of the shipped one. However you can still continue to use this gem and its features (like the precompile hook, and so on).
 
 1. Configure your build on [modernizr.com/download](http://modernizr.com/download/).
 2. Download it.
