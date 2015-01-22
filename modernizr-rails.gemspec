@@ -10,6 +10,7 @@ Gem::Specification.new do |s|
   s.homepage    = "http://rubygems.org/gems/modernizr-rails"
   s.summary     = %q{Gem wrapper to include the Modernizr.js library via the asset pipeline.}
   s.description = %q{This Modernizr.js was built using the at http://www.modernizr.com/download/ with all options enabled.}
+  s.license     = "MIT"
 
   s.rubyforge_project = "modernizr-rails"
   
